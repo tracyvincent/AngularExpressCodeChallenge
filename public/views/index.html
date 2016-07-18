@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="studentApp">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="js/client.js"></script>
+
+
+  </head>
+
+  <body ng-controller="StudentController">
+    <div class="wrapper">
+      <button ng-click="getStudents()">Display Students</button>
+
+      <div>
+        <ol>
+          <li ng-repeat="student in students">
+            {{student}}
+          </li>
+        </ol>
+      </div>
+  </div>
+  </body>
+<html>
